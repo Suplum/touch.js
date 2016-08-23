@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+    <title>Touch</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/touch.js"></script>
+</head>
+<body>
+    <div id="J-div" style="width: 120px; height: 120px; position: absolute; left: 50%; top: 50%; margin-left:-60px;margin-top:-60px;background-color: rgb(128, 128, 128);">好</div>
+    <script type="text/javascript">
+        /** 调用 **/
+
+        //实例Touch对象
+        var MyTouch = new Touch();
+
+        //实例TouchSlide
+        var TouchSlide = new MyTouch.TouchSlide({
+            //传入目标元素
+            target: '#J-div'
+        });
+        //调用拖拽
+        TouchSlide.onDrag();
+</script>
+
+</body>
+</html>
